@@ -4,39 +4,43 @@
     <meta charset="UTF-8">
     <title>Selectores CSS</title>
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts: importo la fuente Roboto para poder usarla desde CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome (hoja de estilos) -->
+    <!-- Font Awesome: hoja de estilos para poder usar iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <!-- Font Awesome (icono de página) -->
+    <!-- Icono de la página (favicon) usando Font Awesome -->
     <link rel="icon" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/svgs/solid/code.svg">
 
-    <!-- Enlace al CSS externo -->
+    <!-- Enlace a mi hoja de estilos externa -->
     <link rel="stylesheet" href="style.css">
 </head>
 
-<!-- REGLA 1: selector universal aplicado a todo el documento -->
-<!-- REGLA 2: estilos para la etiqueta body (márgenes y padding laterales) -->
+<!-- REGLA 1: el selector universal (*) afecta a TODO el documento (lo aplico desde CSS) -->
+<!-- REGLA 2: el body tendrá margen 0 y padding lateral del 20% (también en CSS) -->
 <body>
 
-    <!-- REGLA 3: estilos para h1 -->
+    <!-- REGLA 3: este h1 va subrayado, color darkcyan y centrado -->
     <h1>CSS Selectors</h1>
 
-    <!-- Enlaces obligatorios (frases vinculadas a W3Schools) -->
+    <!-- Enlaces obligatorios a W3Schools: aquí aplico REGLA 9 (li > a sin subrayado) -->
     <ul>
-        <!-- REGLA 9: li > a sin subrayado -->
+        <!-- REGLA 9: los <a> hijos directos de <li> no tienen subrayado -->
         <li><a href="https://www.w3schools.com/css/css_combinators.asp">Combinator selectors</a></li>
         <li><a href="https://www.w3schools.com/css/css_pseudo_classes.asp">Pseudo-class selectors</a></li>
         <li><a href="https://www.w3schools.com/css/css_pseudo_elements.asp">Pseudo-elements selectors</a></li>
         <li><a href="https://www.w3schools.com/css/css_attribute_selectors.asp">Attribute selectors</a></li>
     </ul>
 
-    <!-- REGLA 5: elementos con clase .selectors -->
+    <!-- REGLA 5: este div tiene clase .selectors y recibe padding, borde y border-radius -->
     <div class="selectors">
 
-        <!-- REGLA 4: elementos con clase .selector -->
+        <!-- REGLA 4: clase .selector → color lightcyan -->
         <h2 class="selector">Ejemplo selector por clase</h2>
 
-        <!-- REGLA 6
+        <!-- REGLA 6: id="universal" cambia el color -->
+        <!-- REGLA 7: además por ser h2#universal también recibe fondo, padding y borde redondeado -->
+        <h2 id="universal">Ejemplo selector por id</h2>
+
+        <!-- RE

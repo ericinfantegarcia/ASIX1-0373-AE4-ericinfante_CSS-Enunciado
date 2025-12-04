@@ -37,3 +37,5 @@
 
 5. Utilizar GitHub Pages para desplegar la web en internet
 6. Entregar la URL de GitHub Pages y la URL del repositorio en la actividad en Moodle
+Actualización para activar GitHub Pages.
+Activando GitHub Pages

@@ -1,46 +1,125 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Selectores CSS</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
 
-    <!-- Google Fonts: importo la fuente Roboto para poder usarla desde CSS -->
+    <!-- PUNTO 2: Cargar fuente desde Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome: hoja de estilos para poder usar iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <!-- Icono de la página (favicon) usando Font Awesome -->
+    <!-- PUNTO 3: Icono de página usando un icono de Font Awesome -->
     <link rel="icon" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/svgs/solid/code.svg">
 
-    <!-- Enlace a mi hoja de estilos externa -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Hoja de estilos externa -->
+    <!-- REGLA 1: El selector universal * cambia la fuente de todo el documento -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<!-- REGLA 1: el selector universal (*) afecta a TODO el documento (lo aplico desde CSS) -->
-<!-- REGLA 2: el body tendrá margen 0 y padding lateral del 20% (también en CSS) -->
+<!-- REGLA 2: El body tendrá margin 0 y padding 20% a izquierda y derecha -->
 <body>
-
-    <!-- REGLA 3: este h1 va subrayado, color darkcyan y centrado -->
+    <!-- REGLA 3: h1 subrayado, darkcyan y centrado -->
     <h1>CSS Selectors</h1>
 
-    <!-- Enlaces obligatorios a W3Schools: aquí aplico REGLA 9 (li > a sin subrayado) -->
-    <ul>
-        <!-- REGLA 9: los <a> hijos directos de <li> no tienen subrayado -->
-        <li><a href="https://www.w3schools.com/css/css_combinators.asp">Combinator selectors</a></li>
-        <li><a href="https://www.w3schools.com/css/css_pseudo_classes.asp">Pseudo-class selectors</a></li>
-        <li><a href="https://www.w3schools.com/css/css_pseudo_elements.asp">Pseudo-elements selectors</a></li>
-        <li><a href="https://www.w3schools.com/css/css_attribute_selectors.asp">Attribute selectors</a></li>
-    </ul>
+    <p>A CSS selector selects the HTML element(s) you want to style.</p>
 
-    <!-- REGLA 5: este div tiene clase .selectors y recibe padding, borde y border-radius -->
+    <!-- REGLA 5: div con clase selectors con padding, borde y border-radius -->
     <div class="selectors">
+        <!-- REGLA 4 y REGLA 7: h2 con clase selector -->
+        <h2 class="selector">CSS Selectors</h2>
+        <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
+        <p>We can divide CSS selectors into five categories:</p>
 
-        <!-- REGLA 4: clase .selector → color lightcyan -->
-        <h2 class="selector">Ejemplo selector por clase</h2>
+        <!-- REGLA 9 se aplicará a los enlaces que son hijos directos de li -->
+        <ul>
+            <li>Simple selectors (select elements based on name, id, class)</li>
 
-        <!-- REGLA 6: id="universal" cambia el color -->
-        <!-- REGLA 7: además por ser h2#universal también recibe fondo, padding y borde redondeado -->
-        <h2 id="universal">Ejemplo selector por id</h2>
+            <!-- PUNTO 1: Enlace a Combinator selectors -->
+            <li>
+                <a href="https://www.w3schools.com/css/css_combinators.asp" target="_blank">
+                    Combinator selectors
+                </a>
+                (select elements based on a specific relationship between them)
+            </li>
 
-        <!-- RE
+            <!-- PUNTO 1: Enlace a Pseudo-class selectors -->
+            <li>
+                <a href="https://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank">
+                    Pseudo-class selectors
+                </a>
+                (select elements based on a certain state)
+            </li>
+
+            <!-- PUNTO 1: Enlace a Pseudo-elements selectors -->
+            <li>
+                <a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank">
+                    Pseudo-elements selectors
+                </a>
+                (select and style a part of an element)
+            </li>
+
+            <!-- PUNTO 1: Enlace a Attribute selectors -->
+            <li>
+                <a href="https://www.w3schools.com/css/css_attribute_selectors.asp" target="_blank">
+                    Attribute selectors
+                </a>
+                (select elements based on an attribute or attribute value)
+            </li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <!-- REGLA 4 y REGLA 7: h2 con clase selector -->
+    <!-- REGLA 8: El span cambia de estilo (negrita, fondo negro, texto blanco) -->
+    <h2 class="selector">The CSS <span>element</span> Selector</h2>
+    <p>The element selector selects HTML elements based on the element <span>name</span> (body, p, h1, h5, a, div, etc.).</p>
+
+    <hr>
+
+    <!-- REGLA 4 y REGLA 7: h2 con clase selector -->
+    <h2 class="selector">The CSS <span>id</span> Selector</h2>
+    <p>The id selector uses the id attribute of an HTML element to select a specific element.</p>
+    <p>The id of an element is unique within a page, so the id selector is used to select one unique element!</p>
+    <p>To select an element with a specific id, write a hash <span>(#)</span> character, followed by the id of the element.</p>
+
+    <hr>
+
+    <!-- REGLA 4 y REGLA 7: h2 con clase selector -->
+    <h2 class="selector">The CSS <span>class</span> Selector</h2>
+    <p>The class selector selects HTML elements with a specific class attribute.</p>
+    <p>To select elements with a specific class, write a period <span>(.)</span> character, followed by the class name.</p>
+
+    <hr>
+
+    <!-- REGLA 6 y REGLA 7: h2 con id universal -->
+    <h2 id="universal">The CSS <span>Universal</span> Selector</h2>
+    <p>The universal selector <span>(*)</span> selects all HTML elements on the page.</p>
+
+    <div>
+        <p>Use our <a href="https://www.w3schools.com/cssref/trysel.asp" target="_blank">CSS Selector Tester</a> to demonstrate the different selectors. </p>
+    </div>
+
+    <hr>
+
+    <!-- REGLA 11: div descendientes de #gallery con width 100% -->
+    <div id="gallery">
+        <div>
+            <!-- REGLA 10: h3 con background rgba, padding y border-radius -->
+            <h3>CSS Syntax</h3>
+            <!-- REGLA 12: img con width 100%, borde y border-radius -->
+            <img src="./resources/regla_css.jpg" alt="">
+        </div>
+        <div>
+            <!-- REGLA 10 aplicada también aquí -->
+            <h3>All CSS Simple Selectors</h3>
+            <!-- REGLA 12 aplicada también aquí -->
+            <img src="./resources/selectors.png" alt="">
+        </div>
+    </div>
+
+</body>
+
+</html>

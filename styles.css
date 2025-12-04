@@ -1,67 +1,39 @@
-/* REGLA 1:
-   Selector universal (*)
-   Aplica a absolutamente todos los elementos del documento.
-   Lo uso para definir la fuente descargada de Google Fonts.
-*/
+/* REGLA 1: Utilizar el selector universal * para cambiar el tipo de fuente del documento */
 * {
     font-family: 'Roboto', sans-serif;
 }
 
-/* REGLA 2:
-   Estilos para body:
-   - Quitar margen por defecto del navegador
-   - Añadir padding lateral del 20% (solo izquierda y derecha)
-   Esto centra visualmente el contenido.
-*/
+/* REGLA 2: El elemento body tendrá margen 0 y padding 20% a izquierda y derecha */
 body {
     margin: 0;
     padding: 0 20%;
 }
 
-/* REGLA 3:
-   Estilos para h1:
-   - Subrayado
-   - Color darkcyan
-   - Centrado
-*/
+/* REGLA 3: Los elementos h1 estarán subrayados, de color darkcyan y centrados */
 h1 {
     text-decoration: underline;
     color: darkcyan;
     text-align: center;
 }
 
-/* REGLA 4:
-   Elementos con clase .selector tienen color lightcyan
-*/
+/* REGLA 4: Los elementos con clase selector tendrán color lightcyan */
 .selector {
     color: lightcyan;
 }
 
-/* REGLA 5:
-   Elementos con clase .selectors:
-   - padding interno
-   - borde visible
-   - esquinas redondeadas
-*/
+/* REGLA 5: Los elementos con clase selectors tendrán padding 5%, borde y border-radius 5px */
 .selectors {
     padding: 5%;
     border: solid darkcyan 1px;
     border-radius: 5px;
 }
 
-/* REGLA 6:
-   ID universal → cambia el color del texto
-*/
+/* REGLA 6: Los elementos con id universal tendrán color lightgoldenrodyellow */
 #universal {
     color: lightgoldenrodyellow;
 }
 
-/* REGLA 7:
-   h2 con clase .selector o id #universal reciben:
-   - fondo darkcyan
-   - padding interno
-   - borde redondeado
-*/
+/* REGLA 7: h2 con clase selector y h2 con id universal tendrán fondo darkcyan, padding 1% y border-radius 5px */
 h2.selector,
 h2#universal {
     background-color: darkcyan;
@@ -69,52 +41,31 @@ h2#universal {
     border-radius: 5px;
 }
 
-/* REGLA 8:
-   Todos los <span>:
-   - muy negrita (900)
-   - fondo negro
-   - texto blanco
-*/
+/* REGLA 8: Los elementos span tendrán negrita, fondo negro y texto blanco */
 span {
     font-weight: 900;
     background-color: black;
     color: white;
 }
 
-/* REGLA 9:
-   <a> que sean hijos directos de <li>
-   Quitamos el subrayado del enlace.
-*/
+/* REGLA 9: Los enlaces a que sean hijos directos de li no tendrán subrayado */
 li > a {
     text-decoration: none;
 }
 
-/* REGLA 10:
-   h3:
-   - Color de fondo rgba()
-   - algo de padding
-   - borde redondeado
-*/
+/* REGLA 10: Los elementos h3 tendrán fondo rgba, padding 0.5px y border-radius 5px */
 h3 {
     background-color: rgba(0, 139, 139, 0.529);
     padding: 0.5px;
     border-radius: 5px;
 }
 
-/* REGLA 11:
-   div descendientes del elemento con id="gallery":
-   - ancho completo
-*/
+/* REGLA 11: Los div que sean descendientes de #gallery tendrán width 100% */
 #gallery div {
     width: 100%;
 }
 
-/* REGLA 12:
-   Todas las imágenes:
-   - ancho completo
-   - borde
-   - esquinas redondeadas
-*/
+/* REGLA 12: Las imágenes img tendrán width 100%, borde y border-radius 5px */
 img {
     width: 100%;
     border: solid darkcyan 1px;

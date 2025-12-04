@@ -32,6 +32,8 @@
     * Regla 10. Los elementos `h3` tendrán color de fondo `background-color: rgba(0, 139, 139, 0.529);`, relleno de `0.5px` y esquinas redondeadas con valor de `5px`
     
     * Regla 11. Los elementos `div` que sean descendientes de un elemento con id "gallery" tendrán un ancho `width` de `100%`
+    * Activación de GitHub Pages.
+
     
     * Regla 12. Los elementos `img` tendrán un ancho `width` de `100%`, un `border: solid darkcyan 1px;` y esquinas redondeadas con valor de `5px`
 
